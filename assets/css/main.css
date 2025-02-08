@@ -105,7 +105,7 @@ input, select, textarea {
 		font-weight: 700;
 		text-transform: uppercase;
 		color: #6b7770;
-		margin: 0 0 0.5em 0;
+		margin: 0 0 0.4em 0;
 		line-height: 1.3;
 	}
 
@@ -192,7 +192,7 @@ input, select, textarea {
 /* Section/Article */
 
 	section, article {
-		margin-bottom: 6em;
+		margin-bottom: 5em;
 	}
 
 		section > :last-child, section:last-child, article > :last-child, article:last-child {
@@ -2031,7 +2031,7 @@ input, select, textarea {
 			}
 
 				ul.special li:hover a:before {
-					background: #b9d2ce;
+					background: #d6ad54;
 				}
 
 /* Meta */
@@ -2194,12 +2194,12 @@ input, select, textarea {
 
 		.box.highlight h2 {
 			font-size: 3em;
-			margin: 0 0 0.25em 0;
+			margin: 0 0 0.1em 0;
 		}
 
 		.box.highlight header > p {
 			font-size: 1.65em;
-			margin: 0 0 1.5em 0;
+			margin: 0 0 0.5em 0;
 		}
 
 	.box.feature {
@@ -2207,26 +2207,26 @@ input, select, textarea {
 	}
 
 	.box.post header {
-		margin: 0 0 2.5em 0;
+		margin: 0 0 1em 0;
 	}
 
 	.box.post h3 {
 		font-size: 3em;
-		margin: 0 0 0.25em 0;
+		margin: 0 0 0.1em 0;
 	}
 
 	.box.post header > p {
 		font-size: 1.65em;
-		margin: 0 0 0.5em 0;
+		margin: 0 0 0.15em 0;
 	}
 
 	.box.post ul.meta {
-		margin: 0 0 0.5em 0;
+		margin: 0 0 0.15em 0;
 	}
 
 	.box.post-summary h3 {
 		line-height: 1em;
-		margin: 0 0 0.75em 0;
+		margin: 0 0 0.3em 0;
 	}
 
 	.box.post-summary .meta {
@@ -2235,21 +2235,21 @@ input, select, textarea {
 	}
 
 	.box.page-content header {
-		margin: 0 0 2.5em 0;
+		margin: 0 0 0.3em 0;
 	}
 
 	.box.page-content h2 {
 		font-size: 3em;
-		margin: 0 0 0.5em 0;
+		margin: 0 0 0.1em 0;
 	}
 
 	.box.page-content header > p {
 		font-size: 1.65em;
-		margin: 0 0 0.5em 0;
+		margin: 0 0 0.03em 0;
 	}
 
 	.box.page-content ul.meta {
-		margin: 0 0 0.5em 0;
+		margin: 0 0 0.1em 0;
 	}
 
 /* Icons */
@@ -2406,12 +2406,12 @@ body {
   }
   
   #nav li:hover a, #nav li:hover span {
-	background: #C1CAC5;
+	background: #d6ad54;
 	color: #fff;
   }
   
   #nav li.current a {
-	background: #aecfaa;
+	background: #526b4e;
 	color: #fff;
   }
   
@@ -2471,7 +2471,7 @@ body {
 				font-family: 'Open Sans Condensed', sans-serif;
 				font-weight: 700;
 				text-transform: uppercase;
-				color: #575d59;
+				color: #d8d8d8;
 				font-size: 1.35em;
 				margin: 0 0 1.25em 0;
 			}
@@ -2484,7 +2484,7 @@ body {
 				color: #b4b7b5;
 				background: transparent !important;
 				border: solid 4px #575d59;
-				border-color: rgba(87, 93, 89, 0.35);
+				border-color: rgba(248, 206, 142, 0.35);
 				font-size: 1.5em;
 			}
 
@@ -2502,7 +2502,7 @@ body {
 
 	#main {
 		background: #fff;
-		border-top: solid 5px #a5cea0;
+		border-top: solid 5px #526b4e;
 		border-bottom: solid 5px #c1cac5;
 		border-top-width: 35px;
 		border-bottom-width: 10px;
@@ -2785,7 +2785,7 @@ body {
 						position: absolute;
 						left: 0;
 						top: 0;
-						background: #b1ddab;
+						background: #526b4e;
 						width: 44px;
 						height: 44px;
 						content: '\f0c9';
@@ -2796,7 +2796,7 @@ body {
 					}
 
 					#titleBar .toggle:active:before {
-						background-color: #a1cd9b;
+						background-color: #526b4e;
 					}
 
 			#navPanel {
@@ -2905,7 +2905,7 @@ body {
 				-ms-transform: translateX(0);
 				transform: translateX(0);
 			}
-
+						  
 	}
 
 /* Small */
@@ -3006,7 +3006,7 @@ body {
 			.box.page-content header > p {
 				font-size: 1.25em;
 			}
-
+		
 		/* Banner */
 
 			#banner {
