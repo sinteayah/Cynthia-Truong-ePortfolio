@@ -67,6 +67,10 @@ input, select, textarea {
 	appearance: none;
 }
 
+p {
+	line-height: 1.3;
+	margin-bottom: 1em;
+  }
 /* Basic */
 
 	html {
@@ -198,7 +202,8 @@ input, select, textarea {
 		section > :last-child, section:last-child, article > :last-child, article:last-child {
 			margin-bottom: 0;
 		}
-
+		
+		  
 	header > p {
 		display: block;
 		font-family: 'Open Sans Condensed', sans-serif;
@@ -1956,29 +1961,7 @@ input, select, textarea {
 				top: -5px;
 			}
 
-				ul.contact li:hover a.fa-facebook {
-					background-color: #3C5A98;
-				}
-
-				ul.contact li:hover a.fa-twitter {
-					background-color: #2DAAE4;
-				}
-
-				ul.contact li:hover a.fa-dribbble {
-					background-color: #C4376B;
-				}
-
-				ul.contact li:hover a.fa-linkedin {
-					background-color: #006599;
-				}
-
-				ul.contact li:hover a.fa-instagram {
-					background-color: #2E5E86;
-				}
-
-				ul.contact li:hover a.fa-google-plus {
-					background-color: #DA2713;
-				}
+			
 
 			ul.contact li:active {
 				top: 0;
@@ -3067,3 +3050,4 @@ body {
 			}
 
 	}
+	
