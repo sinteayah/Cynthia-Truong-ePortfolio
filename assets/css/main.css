@@ -2235,6 +2235,128 @@ p {
 		margin: 0 0 0.1em 0;
 	}
 
+	.book {
+		transform-style: preserve-3d;
+		position: relative;
+		height: 250px;
+		cursor: pointer;
+		backface-visibility: visible;
+		}
+	
+		.back, .page6, .page5, .page4, .page3, .page2, .page1, .front {
+		transform-style: preserve-3d;
+		position: absolute;
+		width: 170px;
+		height: 100%;
+		top: 0; left: 0;
+		transform-origin: left center;
+		transition: transform .5s ease-in-out, box-shadow .35s ease-in-out;
+		}
+	
+		.front, .back {
+		background: #526b4e;
+		}
+	
+		.front, .page1, .page3, .page5 {
+		border-bottom-right-radius: .5em;
+		border-top-right-radius: .5em;
+		}
+	
+		.back, .page2, .page4, .page6 {
+		border-bottom-right-radius: .5em;
+		border-top-right-radius: .5em;
+		}
+	
+		.page1 { 
+		background: #efefef;
+		}
+	
+		.page2 {
+		background: #efefef;
+		}
+	
+		.page3 {
+		background: #f5f5f5;
+		}
+	
+		.page4 {
+		background: #f5f5f5;
+		}
+	
+		.page5 {
+		background: #fafafa;
+		}
+	
+		.page6 {
+		background: #fdfdfd;
+		}
+	
+		.page-text {
+			font-family: 'Georgia', serif; 
+			font-size: 12px; 
+			line-height: 1.4; 
+			text-align: justify; 
+			padding: 0.8rem; 
+			color: #333; 
+			background-color: #fdfdfd; 
+			box-sizing: border-box;
+			text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); 
+			border-radius: 5px; 
+			margin: 0 auto; 
+			width: 100%; 
+			height: 100%; 
+			overflow: hidden; 
+			display: flex;
+			flex-direction: column;
+			justify-content: center; 
+			align-items: flex-start; 
+		}
+		
+		.page-text p {
+			margin: 0 0 1em 0; /* Adds space between paragraphs */
+		}
+		
+		.book:hover .front {
+		transform: rotateY(-160deg) scale(1.1);
+		box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+		}
+	
+		.book:hover .page1 {
+		transform: rotateY(-150deg) scale(1.1);
+		box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+		}
+	
+		.book:hover .page2 {
+		transform: rotateY(-30deg) scale(1.1);
+		box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+		}
+	
+		.book:hover .page3 {
+		transform: rotateY(-140deg) scale(1.1);
+		box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+		}
+	
+		.book:hover .page4 {
+		transform: rotateY(-40deg) scale(1.1);
+		box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+		}
+	
+		.book:hover .page5 {
+		transform: rotateY(-130deg) scale(1.1);
+		box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+		}
+	
+		.book:hover .page6 {
+		transform: rotateY(-50deg) scale(1.1);
+		box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+		}
+	
+		.book:hover .back {
+		transform: rotateY(-20deg) scale(1.1);
+		}
+	
+		
+
 /* Icons */
 
 	.icon {
@@ -2530,7 +2652,12 @@ body {
 		padding: 0.75em 2em 0.75em 2em;
 		border-radius: 8px;
 		color: #8b9790;
-		margin: 4em 0 0 0;
+		margin: 4em auto 0 auto;
+		text-align: center;
+		width: fit-content;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 
 		#copyright a {
@@ -3050,4 +3177,60 @@ body {
 			}
 
 	}
+	
+		/* Scroll Container */
+		div.scroll-container {
+			background-color: #526b4e;
+			overflow: hidden;
+			display: flex;
+			padding: 0;
+			border-radius: 8px;
+			white-space: nowrap;
+			width: 100%;
+			max-width: 100%;
+			border: 2px solid #3d503a; /* Added frame */
+			box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
+		  }
+		
+		  /* Image Track Styling */
+		  .image-track {
+			display: inline-flex;
+			animation: scroll 95s linear infinite; /* Slower animation */
+		  }
+		
+		  /* Image Styling */
+		  div.scroll-container img {
+			padding: 2;
+			border-radius: 10px;
+			transition: transform 0.2s;
+			object-fit: cover;
+			width: 600px;
+			height: 300px;
+			border: 1px solid #3d503a; /* Image frame */
+		  }
+		
+		  div.scroll-container img:hover {
+			transform: scale(1.08);
+		  }
+		
+		  /* Scrolling Keyframes */
+		  @keyframes scroll {
+			0% {
+			  transform: translateX(0);
+			}
+			100% {
+			  transform: translateX(-100%);
+			}
+		  }
+		  #output {
+            white-space: pre-line;  
+            line-height: 1.6;       
+            margin-top: 20px;  
+			color: rgb(129, 89, 29);
+			border: 2px solid  rgba(221, 181, 121, 0.705);
+			padding: 10px; 
+			margin-left: 5px auto; 
+			box-sizing: border-box; 
+			width: 50%; 
+		
 	
