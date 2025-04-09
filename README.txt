@@ -5,6 +5,8 @@ This website was created for my MLIS ePortfolio, showcasing my accumulated libra
 Credits:
 	Template: html5up.net | @ajlkn
 
+	Stock Images: pexels.com
+
 	Icons:
 		Font Awesome (fontawesome.io)
 
