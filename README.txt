@@ -1,4 +1,4 @@
-This website was created for my MLIS ePortfolio, showcasing my accumulated library experience from both my academic coursework and professional career.
+This website was created for my Master of Library and Information Science (MLIS) ePortfolio, showcasing my accumulated library experience from both my academic coursework and professional career. 
 
 
 
